@@ -64,8 +64,7 @@ int main(int argc, char **argv)
      * Check whether we are running as root
      **/
     if (getuid() == 0) {
-        std::cout << "Executing Kate as root is not possible. To edit files as root use:" << std::endl;
-        std::cout << "SUDO_EDITOR=kate sudoedit <file>" << std::endl;
+        std::cout << "Executing Kate as root is not recommended!" << std::endl;
         return 0;
     }
 #endif
